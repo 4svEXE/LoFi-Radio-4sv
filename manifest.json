@@ -1,0 +1,28 @@
+{
+  "browser_action": {
+    "default_icon": {
+      "19": "img/ico.png",
+      "38": "img/ico.png"
+    },
+    "default_title": "LoFi Radio",
+    "default_popup": "index.html"
+  },
+
+  "description": "Your LoFi Radio :) 6 stations, 8 themes and sound effects!",
+
+  "icons": {
+    "48": "img/ico.png",
+    "96": "img/ico.png"
+  },
+
+  "manifest_version": 2,
+
+  "name": "4sv LoFi Radio",
+
+  "version": "1.2",
+
+  "background": {
+    "script": "js/bg.js",
+    "page": "bg.html"
+  }
+}
