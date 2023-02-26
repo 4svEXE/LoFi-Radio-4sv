@@ -32,6 +32,7 @@ $("#prew").onclick = () => {
 function renderStation(station) {
   $("#s-title").innerText = stations[station].title;
   $("#s-logo").src = stations[station].image;
+  
   radioConfigs.setItem("url", stations[station].url);
   radioConfigs.setItem("play", "true");
   radioConfigs.setItem("stationId", station);

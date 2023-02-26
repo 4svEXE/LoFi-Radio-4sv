@@ -6,6 +6,7 @@ class LocalStorageItem{
         this.themeId = options.themeId
         this.play = options.play
         this.soundsVolume = options.soundsVolume
+        this.themes = options.themes
     }
 
     save() {

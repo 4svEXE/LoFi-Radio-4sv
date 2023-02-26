@@ -1,29 +1,31 @@
 function addStations() {
-  $(".content-page.p-stations").innerHTML = "";
+  $(".content-page.p-stations").innerText = "";
 
   stations.forEach((station, i) => {
     let active = "";
     let icon = "play";
+
     if (radioConfigs.stationId == i) {
       active = "active";
       icon = "pause";
     }
-    let item = `
+
+    let stationHTML = `
       <div class="station-wrapper sv-flex ${active}">
-          <div class="station sv-flex" tooltip="${station.title}">
+          <div class="station sv-flex" tooltip${(i+1)%3==0?'-left':''}="${station.title}">
               <img src="${station.image}" class="logo-station">
               <img src="img/controls/${icon}.png" class="play-station"/>
           </div>
       </div>
       `;
-    $(".content-page.p-stations").insertAdjacentHTML("beforeend", item);
+
+    $(".content-page.p-stations").insertAdjacentHTML("beforeend", stationHTML);
   });
 
   // play radioststion on click
-  $$(".station-wrapper").forEach((station, i) => {
+  $$(".station-wrapper").forEach((station, stationID) => {
     station.addEventListener("click", () => {
-      currentStation = i;
-      renderStation(currentStation);
+      renderStation(stationID); //function from controls.js
       addStations();
     });
   });

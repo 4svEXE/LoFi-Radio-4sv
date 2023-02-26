@@ -29,4 +29,15 @@ const stations = [
     image: "img/stations/6.gif",
     url: "https://streaming.radio.co/s8267e5edc/listen",
   },
+
+  {
+    title: "test Radio",
+    image: "img/stations/8.gif",
+    url: "https://stream-27.zeno.fm/0r0xa792kwzuv?zs=gU-lUn9eSFGuk0ORU1JEvA",
+  },
+  {
+    title: "test Otaku",
+    image: "img/stations/6.gif",
+    url: "https://streaming.radio.co/s8267e5edc/listen",
+  },
 ];

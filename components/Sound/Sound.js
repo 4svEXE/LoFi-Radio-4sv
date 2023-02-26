@@ -5,7 +5,7 @@ let s_swipe_on = "sound/swipe-on.mp3";
 let s_swipe_off = "sound/swipe.mp3";
 let s_click = "sound/click.mp3";
 
-function playSound(src) {
+function playSound(src = s_click) {
   sound.src = src;
   sound.play();
 }
@@ -36,20 +36,18 @@ $("#back-to-controls").addEventListener("click", () => {
   }
 });
 
-$("#sounds").addEventListener("click", () => {
-  playSound(s_swipe_off);
-});
+$("#sounds").addEventListener("click", () => playSound(s_swipe_off));
 
 function reloadRenderedSounds(className, sound) {
   setTimeout(() => {
-    $$(className).forEach((theme) => {
-      theme.addEventListener("click", () => {
+    $$(className).forEach((element) => {
+      element.addEventListener("click", () => {
         playSound(sound);
         reloadRenderedSounds(className, sound);
       });
     });
-  }, 100);
+  }, 10);
 }
 
-reloadRenderedSounds(".theme", s_click);
+reloadRenderedSounds(".theme-button", s_click);
 reloadRenderedSounds(".station", s_click);

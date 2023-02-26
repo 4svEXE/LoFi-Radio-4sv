@@ -2,8 +2,10 @@
 	<link href="css/variables.css" rel="stylesheet" type="text/css" />
 	<link href="css/styles.css" rel="stylesheet" type="text/css" />
 	<link href="css/tooltip.css" rel="stylesheet" type="text/css" />
+	<link href="css/scrollBarStyle.css" rel="stylesheet" type="text/css" />
 
 	<div class="components">
+		<link href="components/Confirm/Confirm.css" rel="stylesheet" type="text/css" />
 		<link href="components/Controls/Controls.css" rel="stylesheet" type="text/css" />
 		<link href="components/Themes/Themes.css" rel="stylesheet" type="text/css" />
 		<link href="components/Stations/Stations.css" rel="stylesheet" type="text/css" />
@@ -29,6 +31,8 @@
   </div>
 
   <div class="content">
+	<div class="confirm"></div>
+
     <div class="content-page p-settings sv-flex sv-col">
 		<audio src="" id="sound"></audio>
 		<span>sounds</span>
@@ -40,6 +44,8 @@
 			</label>
 			<h4>on</h4>
 		</div>
+
+		<button id="roll-back-sennings">Roll Back</button>
 	</div>
     <div class="content-page p-themes sv-flex"></div>
     <div class="content-page p-stations sv-flex"></div>
@@ -127,20 +133,25 @@
     </div>
   </div>
 
+  
+
   <div class="scripts">
     <script src="js/global.js"></script>
-    <script src="js/stations.js"></script>
-    <script src="js/themes.js"></script>
+    
     <script src="js/class/LocalStorageItem.js"></script>
     <script src="js/main.js"></script>
 
+	<script src="db/stations.js"></script>
+    <script src="db/themes.js"></script>
+
 	<div class="components">
+		<script src="components/Confirm/Confirm.js"></script>
+		<script src="components/Settings/Settings.js"></script>
+		<script src="components/Sound/Sound.js"></script>
 		<script src="components/Controls/Controls.js"></script>
 		<script src="components/Themes/Themes.js"></script>
 		<script src="components/Stations/Stations.js"></script>
-		<script src="components/Settings/Settings.js"></script>
 		<script src="components/About/About.js"></script>
-		<script src="components/Sound/Sound.js"></script>
 	</div>
   </div>
 </div>
