@@ -306,19 +306,6 @@ html {
   padding: 4px 16px;
   font-size: 14px;
 }
-.thin-ui-button-large {
-  padding: 12px 32px;
-  font-size: 16px;
-}
-.thin-ui-button-giant {
-  padding: 16px 36px;
-  font-size: 20px;
-}
-.thin-ui-button-hero {
-  padding: 16px 48px;
-  font-size: 18px;
-  border-radius: 38px;
-}
 
 .thin-ui-button-rounded {
   border-radius: 64px;
@@ -648,6 +635,7 @@ label.thin-ui-popover button:focus + .thin-ui-popover-body {
   flex-flow: column wrap;
   margin-right: 100px;
   border-radius: 8px;
+  overflow: hidden;
 }
 
 .thin-ui-modal-title {

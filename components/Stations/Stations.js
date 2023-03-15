@@ -13,7 +13,7 @@ function addStations() {
     let stationHTML = `
       <div class="station-wrapper sv-flex ${active}">
           <div class="station sv-flex" tooltip${(i+1)%3==0?'-left':''}="${station.title}">
-              <img src="${station.image}" class="logo-station">
+              <img src="${station.image}_.jpg" class="logo-station">
               <img src="img/controls/${icon}.png" class="play-station"/>
           </div>
       </div>
