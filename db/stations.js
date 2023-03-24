@@ -74,9 +74,15 @@ const stations = [
   },
 
   {
-    title: "Radio Otaku",
+    title: "Gamespoint",
     image: "img/stations/14.gif",
-    url: "https://streaming.radio.co/s8267e5edc/listen",
+    url: "https://radio-gamespoint.stream.laut.fm/radio-gamespoint?ref=radiode&t302=2023-03-17_12-56-03&uuid=6a917f10-9c8c-46bd-aa82-c407cfe43db4",
+  },
+  
+    {
+    title: "Score-radio",
+    image: "img/stations/15.gif",
+    url: "https://score-radio.stream.laut.fm/score-radio?ref=radiode&t302=2023-03-17_12-54-24&uuid=b609fb08-3737-4595-84dc-337f6180e06a",
   },
 
 ];
