@@ -189,3 +189,20 @@ input[type='range']::-webkit-slider-thumb {
 #prew {
   transform: rotateY(180deg);
 }
+#fav_icon{
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  opacity: .5;
+  transition: .3s;
+}
+#fav_icon.active{
+  opacity: 1;
+}
+#fav_icon_2{
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  opacity: 0;
+  pointer-events: none;
+}

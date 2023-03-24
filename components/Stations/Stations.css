@@ -34,3 +34,15 @@
 .station:hover .play-station{
   opacity: 1;
 }
+
+.fav-icon{
+  width: 12px;
+  position: absolute;
+  top: 5px;left: 5px;
+  opacity: 0;
+  border-radius: 50%;
+  background-color: var(--active-bg-color);
+}
+.fav-icon.active{
+  opacity: 1;
+}
