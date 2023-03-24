@@ -18,25 +18,25 @@ function updateControls() {
 }
 
 //logic for adding/deleting station to favorites
-$('#fav_icon').addEventListener('click', ()=>{
-  $('#fav_icon').classList.toggle('active')
-  stations[currentStation].favorite = !stations[currentStation].favorite
+$("#fav_icon").addEventListener("click", () => {
+  $("#fav_icon").classList.toggle("active");
+  stations[currentStation].favorite = !stations[currentStation].favorite;
 
   //sorting the stations by favorite
-  let temp = []
+  let temp = [];
   stations.forEach((station) => {
     if (station.favorite) {
-      temp.unshift(station)
+      temp.unshift(station);
     } else {
       temp.push(station);
     }
-  })
+  });
 
   stations = temp;
+  currentStation = 0;
 
   radioConfigs.setItem("stations", stations);
-})
-
+});
 
 $("#next").onclick = () => {
   currentStation++;
@@ -53,17 +53,17 @@ $("#prew").onclick = () => {
 function renderStation(station) {
   $("#s-title").innerText = stations[station].title;
   $("#s-logo").src = stations[station].image;
-  
+
   radioConfigs.setItem("url", stations[station].url);
   radioConfigs.setItem("play", "true");
   radioConfigs.setItem("stationId", station);
 
   updateControls();
 
-  if(stations[currentStation].favorite) {
-    $('#fav_icon').classList.add('active')
+  if (stations[currentStation].favorite) {
+    $("#fav_icon").classList.add("active");
   } else {
-    $('#fav_icon').classList.remove('active')
+    $("#fav_icon").classList.remove("active");
   }
 
   setTimeout(() => {
