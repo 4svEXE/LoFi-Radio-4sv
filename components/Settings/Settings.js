@@ -23,7 +23,7 @@ $("#roll-back-sennings").addEventListener("click", () => {
     soundsVolume: 0.8,
   };
 
-  let radioConfigs = new LocalStorageItem(localStorageConfigs);
+  radioConfigs = new LocalStorageItem(localStorageConfigs);
 
   radioConfigs.save();
 

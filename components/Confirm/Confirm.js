@@ -3,7 +3,7 @@
 class SimpleModal {
 
     constructor(modalTitle, modalText, acceptText, cancelText) {
-        this.modalTitle = modalTitle || 'Hello world!';
+        this.modalTitle = modalTitle || 'Dialog';
         this.modalText = modalText || 'Are you sure you want to do this?';
         this.acceptText = acceptText || 'Yes';
         this.cancelText = cancelText || 'No';
@@ -113,9 +113,7 @@ class SimpleModal {
 async function openModal(title, message, yes = 'yes', no = 'no') {
     let myModal = new SimpleModal(title, message, yes, no);
     try {
-        //const modalResponse = await myModal.question();
         return await myModal.question();
-        
     } catch (err) {
         console.log(err);
     }
