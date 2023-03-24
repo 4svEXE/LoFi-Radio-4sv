@@ -7,6 +7,7 @@ class LocalStorageItem{
         this.play = options.play
         this.soundsVolume = options.soundsVolume
         this.themes = options.themes
+        this.stations = options.stations
     }
 
     save() {
