@@ -44,7 +44,7 @@
   transition: .3s;
 }
 
-
+/* LOADER */
 #loader{
   position: absolute;
   top: 0;left: 0;
@@ -198,11 +198,4 @@ input[type='range']::-webkit-slider-thumb {
 }
 #fav_icon.active{
   opacity: 1;
-}
-#fav_icon_2{
-  width: 30px;
-  height: 30px;
-  margin-left: 20px;
-  opacity: 0;
-  pointer-events: none;
 }

@@ -4,6 +4,9 @@ let s_button = "sound/button.mp3";
 let s_swipe_on = "sound/swipe-on.mp3";
 let s_swipe_off = "sound/swipe.mp3";
 let s_click = "sound/click.mp3";
+let s_ring = "sound/ring.wav";
+let s_modal = "sound/modal.wav";
+let s_hover = "sound/hover.mp3";
 
 function playSound(src = s_click) {
   sound.src = src;
@@ -13,6 +16,12 @@ function playSound(src = s_click) {
 $$(".controls").forEach((item) => {
   item.addEventListener("click", () => {
     playSound(s_button);
+  });
+});
+
+$$(".social").forEach((item) => {
+  item.addEventListener("mouseover", () => {
+    playSound(s_hover);
   });
 });
 
@@ -36,7 +45,8 @@ $("#back-to-controls").addEventListener("click", () => {
   }
 });
 
-$("#sounds").addEventListener("click", () => playSound(s_swipe_off));
+$("#sounds").addEventListener("click", () => playSound(s_ring));
+
 
 function reloadRenderedSounds(className, sound) {
   setTimeout(() => {

@@ -27,16 +27,19 @@ class SimpleModal {
             this.acceptButton.focus();
 
             this.acceptButton.addEventListener('click', () => {
+                playSound(s_button);
                 resolve(true);
                 this._destroyModal();
             });
 
             this.cancelButton.addEventListener('click', () => {
+                playSound(s_click);
                 resolve(false);
                 this._destroyModal();
             });
 
             this.closeButton.addEventListener('click', () => {
+                playSound(s_button);
                 resolve(null);
                 this._destroyModal();
             })
@@ -111,6 +114,7 @@ class SimpleModal {
 }
 
 async function openModal(title, message, yes = 'yes', no = 'no') {
+    playSound(s_modal)
     let myModal = new SimpleModal(title, message, yes, no);
     try {
         return await myModal.question();

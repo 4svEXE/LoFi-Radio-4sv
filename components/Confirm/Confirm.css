@@ -650,6 +650,7 @@ label.thin-ui-popover button:focus + .thin-ui-popover-body {
 }
 .thin-ui-modal-title div {
   color: #fff !important;
+  margin-left: 15px;
 }
 .thin-ui-modal-close {
   margin-left: auto;

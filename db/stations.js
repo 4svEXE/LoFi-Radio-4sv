@@ -36,7 +36,7 @@ function getStations() {
       title: "Relaxxx",
       image: "img/stations/05.gif",
       url:
-        "https://pub0302.101.ru:8443/stream/pro/aac/64/358?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpcCI6IjE3Ni4xMjQuMTM0LjEyNCIsInVzZXJhZ2VudCI6Ik1vemlsbGFcLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdFwvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lXC85NS4wLjQ2MzguNjkgU2FmYXJpXC81MzcuMzYgT1BSXC84MS4wLjQxOTYuNjAiLCJ1aWRfY2hhbm5lbCI6IjM1OCIsInR5cGVfY2hhbm5lbCI6ImNoYW5uZWwiLCJleHAiOjE2MzkwMDU5ODZ9.bH6fMieQYWEhqkOrj2HGjIdi6-k1YQYFgeb0QzofUyM",
+        "https://radio4.vip-radios.fm:18027/stream-128kmp3-YogaChill",
       favorite: false,
     },
     {

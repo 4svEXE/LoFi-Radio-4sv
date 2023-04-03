@@ -12,9 +12,6 @@ function updateControls() {
   }
 
   $("#loader").classList.add("active");
-  setTimeout(() => {
-    $("#loader").classList.remove("active");
-  }, 1000);
 }
 
 //logic for adding/deleting station to favorites

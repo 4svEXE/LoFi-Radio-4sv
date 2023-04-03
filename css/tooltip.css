@@ -59,3 +59,24 @@
   opacity: 1;
   top:-100%;
 }
+
+[tooltip-bottom] {
+  position: relative;
+}
+[tooltip-bottom]::after {
+  content: attr(tooltip-bottom);
+  position: absolute;width: auto;
+  left: 0; bottom: 0;
+  background-color: var(--controlss-bg-color);
+  color: var(--text-color);
+  padding: 0.5em;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  opacity: 0;transition: .3s;
+  z-index: 999;
+  font-size: 12px;
+}
+[tooltip-bottom]:hover::after {
+  opacity: 1;
+  bottom:-100%;
+}
