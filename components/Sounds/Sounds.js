@@ -13,6 +13,10 @@ function playSound(src = s_click) {
   sound.play();
 }
 
+$("#animations").addEventListener("click", () => {
+  playSound(s_click);
+})
+
 $$(".controls").forEach((item) => {
   item.addEventListener("click", () => {
     playSound(s_button);
@@ -46,7 +50,6 @@ $("#back-to-controls").addEventListener("click", () => {
 });
 
 $("#sounds").addEventListener("click", () => playSound(s_ring));
-
 
 function reloadRenderedSounds(className, sound) {
   setTimeout(() => {

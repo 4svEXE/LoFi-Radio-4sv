@@ -9,8 +9,23 @@ $("#sounds").addEventListener("click", () => {
 });
 
 $("#sound").volume = radioConfigs.getItem("soundsVolume");
-$("#sounds").checked = !!radioConfigs.getItem("soundsVolume");
+$("#sounds").checked = radioConfigs.getItem("soundsVolume");
 
+// animate videos
+
+$("#animations").addEventListener("click", () => {
+  if ($("#animations").checked) {
+    radioConfigs.setItem("animations", true);
+  } else {
+    radioConfigs.setItem("animations", false);
+  }
+
+  renderStation(currentStation)
+});
+
+$("#animations").checked = radioConfigs.getItem("animations");
+
+// roll back
 $("#roll-back-sennings").addEventListener("click", async () => {
   try {
     if (
@@ -38,6 +53,8 @@ $("#roll-back-sennings").addEventListener("click", async () => {
       getThemes();
       addThemes();
       renderTheme(0);
+
+      updateControls();
 
       reloadRenderedSounds(".theme-button", s_click);
     }

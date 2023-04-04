@@ -2,12 +2,12 @@
   display: none;
 }
 
-#sounds-icon{
+.settings-button{
   opacity: .5;
   cursor: pointer;
   transition: .3s;
 }
-input:checked + #sounds-icon {
+input:checked + .settings-button{
   opacity: 1;
   /* animation properties */
   animation-name: my-animation;

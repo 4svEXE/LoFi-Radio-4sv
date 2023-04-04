@@ -5,6 +5,7 @@ let localStorageConfigs = {
   themeId: 0,
   play: false,
   soundsVolume: 0.8,
+  animations: true
 };
 
 let radioConfigs = new LocalStorageItem(localStorageConfigs);

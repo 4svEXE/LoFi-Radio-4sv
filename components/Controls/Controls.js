@@ -48,8 +48,10 @@ $("#prew").onclick = () => {
 };
 
 function renderStation(station) {
+  let animateStationImage = radioConfigs.getItem("animations")?'' : '_.jpg';
+
   $("#s-title").innerText = stations[station].title;
-  $("#s-logo").src = stations[station].image;
+  $("#s-logo").src = stations[station].image + animateStationImage;
 
   radioConfigs.setItem("url", stations[station].url);
   radioConfigs.setItem("play", "true");
